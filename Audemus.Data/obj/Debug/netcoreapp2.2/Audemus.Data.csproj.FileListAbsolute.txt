@@ -1,0 +1,12 @@
+C:\Users\chris\source\repos\Audemus\Audemus.Data\bin\Debug\netcoreapp2.2\Audemus.Data.deps.json
+C:\Users\chris\source\repos\Audemus\Audemus.Data\bin\Debug\netcoreapp2.2\Audemus.Data.dll
+C:\Users\chris\source\repos\Audemus\Audemus.Data\bin\Debug\netcoreapp2.2\Audemus.Data.pdb
+C:\Users\chris\source\repos\Audemus\Audemus.Data\bin\Debug\netcoreapp2.2\Audemus.Core.dll
+C:\Users\chris\source\repos\Audemus\Audemus.Data\bin\Debug\netcoreapp2.2\Audemus.Core.pdb
+C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.csprojAssemblyReference.cache
+C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.AssemblyInfoInputs.cache
+C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.AssemblyInfo.cs
+C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.csproj.CopyComplete
+C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.dll
+C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.pdb
