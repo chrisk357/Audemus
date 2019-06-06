@@ -39,6 +39,7 @@ namespace Audemus.Data
         }
         public IEnumerable<Contact> GetContactsByName(string name = null)
         {
+
             return from c in contacts
                    where string.IsNullOrEmpty(name) ||
                    c.Name.StartsWith(name)

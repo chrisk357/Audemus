@@ -29,9 +29,7 @@ namespace Audemus.Pages.Contacts
 
         public void OnGet()
         {
-            
             Contacts = contactData.GetContactsByName(SearchTerm);
-
         }
     }
 }

@@ -1,0 +1,39 @@
+﻿@page "{contactId:int}"
+@model Audemus.Pages.Contacts.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit @Model.Contact.Name</h2>
+
+<form method="post">
+
+    <input type="hidden" asp-for="Contact.Id" />
+    <div class="form-group">
+        <label asp-for="Contact.Name"></label>
+        <input asp-for="Contact.Name" class="form-control" />
+    </div>    
+    <div class="form-group">
+        <label asp-for="Contact.CityLocation"></label>
+        <input asp-for="Contact.CityLocation" class="form-control" />
+    </div>    
+    <div class="form-group">
+        <label asp-for="Contact.StateLocation"></label>
+        <input asp-for="Contact.StateLocation" class="form-control" />
+    </div>    
+    <div class="form-group">
+        <label asp-for="Contact.Phone"></label>
+        <input asp-for="Contact.Phone" class="form-control" />
+    </div>    
+    <div class="form-group">
+        <label asp-for="Contact.Email"></label>
+        <input asp-for="Contact.Email" class="form-control" />
+    </div>    
+    <div class="form-group">
+        <label asp-for="Contact.EmployeeContact"></label>
+        <select class="form-control" asp-for="Contact.EmployeeContact" 
+                                    asp-items="Model.EmployeeContacts"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
