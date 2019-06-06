@@ -1,0 +1,27 @@
+﻿@page "{contactId:int}"
+@model Audemus.Pages.Contacts.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>@Model.Contact.Name</h2>
+<div>
+    Id: @Model.Contact.Id
+</div>
+<div>
+    City: @Model.Contact.CityLocation
+</div>
+<div>
+    State: @Model.Contact.StateLocation
+</div>
+<div>
+    Email: @Model.Contact.Email
+</div>
+<div>
+    Phone: @Model.Contact.Phone
+</div>
+<div>
+    Sit-Rep: @Model.Contact.EmployeeContact
+</div>
+
+<a asp-page="./List" class="btn btn-danger">Back</a>

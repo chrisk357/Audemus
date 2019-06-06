@@ -1,0 +1,39 @@
+﻿@page
+@model Audemus.Pages.Contacts.ListModel
+@{
+
+}
+
+<h1>Contacts</h1>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" asp-for="SearchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-default btn-success">
+                    <i class="fas fa-arrow-right" ></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
+
+<table class="table">
+    @foreach (var contact in Model.Contacts)
+    {
+        <tr>
+            <td>@contact.Name</td>
+        <!--<td>@contact.CityLocation</td>
+            <td>@contact.StateLocation</td>     -->
+            <td>@contact.Phone</td>
+            <td>@contact.Email</td>
+            <td>
+                <a class="btn btn-lg" asp-page="./Detail" asp-route-contactId="@contact.Id">
+                    <i class="far fa-address-card"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>

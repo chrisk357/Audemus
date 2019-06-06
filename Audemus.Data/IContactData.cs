@@ -8,7 +8,8 @@ namespace Audemus.Data
 {
     public interface IContactData
     {
-        IEnumerable<Contact> GetAll();
+        IEnumerable<Contact> GetContactsByName(string name);
+        Contact GetById(int id);
     }
 
     public class InMemoryContactData : IContactData
@@ -31,9 +32,16 @@ namespace Audemus.Data
 
             };
         }
-        public IEnumerable<Contact> GetAll()
+
+        public Contact GetById(int id)
+        {
+            return contacts.SingleOrDefault(c => c.Id == id);
+        }
+        public IEnumerable<Contact> GetContactsByName(string name = null)
         {
             return from c in contacts
+                   where string.IsNullOrEmpty(name) ||
+                   c.Name.StartsWith(name)
             orderby c.Name
             select c;
         }

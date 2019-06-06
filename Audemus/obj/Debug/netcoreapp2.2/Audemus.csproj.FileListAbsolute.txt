@@ -28,4 +28,9 @@ C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Audemus.View
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Audemus.dll
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Audemus.pdb
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Audemus.csproj.CopyComplete
-C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contact\List.g.cshtml.cs
+C:\Users\chris\source\repos\Audemus\Audemus\bin\Debug\netcoreapp2.2\Audemus.Core.dll
+C:\Users\chris\source\repos\Audemus\Audemus\bin\Debug\netcoreapp2.2\Audemus.Data.dll
+C:\Users\chris\source\repos\Audemus\Audemus\bin\Debug\netcoreapp2.2\Audemus.Data.pdb
+C:\Users\chris\source\repos\Audemus\Audemus\bin\Debug\netcoreapp2.2\Audemus.Core.pdb
+C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contacts\List.g.cshtml.cs
+C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contacts\Detail.g.cshtml.cs

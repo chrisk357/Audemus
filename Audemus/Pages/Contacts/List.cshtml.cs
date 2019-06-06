@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
 
-namespace Audemus.Pages.Contact
+namespace Audemus.Pages.Contacts
 {
     public class ListModel : PageModel
     {
@@ -17,7 +17,10 @@ namespace Audemus.Pages.Contact
 
         public string Message { get; set; }
 
-        public IEnumerator<Contact> Contacts { get; set; }
+        public IEnumerable<Contact> Contacts { get; set; }
+
+        [BindProperty(SupportsGet =true)]
+        public string SearchTerm { get; set; }
         public ListModel(IConfiguration config, IContactData contactData)
         {
             this.config = config;
@@ -27,7 +30,7 @@ namespace Audemus.Pages.Contact
         public void OnGet()
         {
             
-            Contacts = contactData.GetAll();
+            Contacts = contactData.GetContactsByName(SearchTerm);
 
         }
     }
