@@ -23,7 +23,7 @@ namespace Audemus.Pages.Contacts
         }
         public IActionResult OnGet(int contactId)
         {
-            EmployeeContacts = htmlHelper.GetEnumSelectList<EmployeeContactType>();
+            EmployeeContacts = htmlHelper.GetEnumSelectList<EmployeeContacts>();
             Contact = contactData.GetById(contactId);
             if(Contact == null)
             {
