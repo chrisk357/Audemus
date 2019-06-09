@@ -10,6 +10,9 @@ namespace Audemus.Data
     {
         IEnumerable<Contact> GetContactsByName(string name);
         Contact GetById(int id);
+        Contact Update(Contact updatedContact);
+        Contact Add(Contact newContact);
+        int Commit();
     }
 
     public class InMemoryContactData : IContactData
@@ -22,13 +25,13 @@ namespace Audemus.Data
             contacts = new List<Contact>()
             {
                 new Contact { Id = 1, Name = "Alfred Law Office", CityLocation = "Houston", StateLocation = "Texas",
-                Phone = "8322221535", Email = "Alfredlaw@gmail.com", EmployeeContact = EmployeeContactType.NoResponseLeftVM},
+                Phone = "8322221535", Email = "Alfredlaw@gmail.com", EmployeeContact = ContactType.NoResponseLeftVM},
                 new Contact { Id = 2, Name = "Jersey Jurisdiction Firm", CityLocation = "Houston", StateLocation = "Texas",
-                Phone = "8324441433", Email = "JerseyJ@ymail.com", EmployeeContact = EmployeeContactType.ContactMadeFollowUp},
+                Phone = "8324441433", Email = "JerseyJ@ymail.com", EmployeeContact = ContactType.ContactMadeFollowUp},
                 new Contact { Id = 3, Name = "Smith & Sanders Associates", CityLocation = "Cypress", StateLocation = "Texas",
-                Phone = "2813581298", Email = "SSassociates@gmail.com", EmployeeContact = EmployeeContactType.NoResponseLeftVM},
+                Phone = "2813581298", Email = "SSassociates@gmail.com", EmployeeContact = ContactType.NoResponseLeftVM},
                 new Contact { Id = 4, Name = "Turner Law Office", CityLocation = "Pasadena", StateLocation = "Texas",
-                Phone = "8322221535", Email = "TurnerLaw@gmail.com", EmployeeContact = EmployeeContactType.ContactMadeNoFollowUp}
+                Phone = "8322221535", Email = "TurnerLaw@gmail.com", EmployeeContact = ContactType.ContactMadeNoFollowUp}
 
             };
         }
@@ -37,14 +40,46 @@ namespace Audemus.Data
         {
             return contacts.SingleOrDefault(c => c.Id == id);
         }
+
+        public Contact Add(Contact newContact)
+        {
+            contacts.Add(newContact);
+            newContact.Id = contacts.Max(c => c.Id) + 1;
+            return newContact;
+        }
+
+        public Contact Update(Contact updatedContact)
+        {
+            var contact = contacts.SingleOrDefault(c => c.Id == updatedContact.Id);
+            if(contact != null)
+            {
+                contact.Name = updatedContact.Name;
+                contact.CityLocation = updatedContact.CityLocation;
+                contact.StateLocation = updatedContact.StateLocation;
+                contact.Phone = updatedContact.Phone;
+                contact.Email = updatedContact.Email;
+                contact.EmployeeContact = updatedContact.EmployeeContact;
+
+            }
+            return contact;
+        }
+
+
+        public int Commit()
+        {
+            return 0;
+        }
+
+
         public IEnumerable<Contact> GetContactsByName(string name = null)
         {
 
             return from c in contacts
-                   where string.IsNullOrEmpty(name) ||
-                   c.Name.StartsWith(name)
+                   where string.IsNullOrEmpty(name) ||c.Name.StartsWith(name)
             orderby c.Name
             select c;
         }
+
+
     }
 }

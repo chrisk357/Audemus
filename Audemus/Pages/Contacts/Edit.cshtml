@@ -29,10 +29,11 @@
         <label asp-for="Contact.Email"></label>
         <input asp-for="Contact.Email" class="form-control" />
     </div>    
+
     <div class="form-group">
         <label asp-for="Contact.EmployeeContact"></label>
         <select class="form-control" asp-for="Contact.EmployeeContact" 
-                                    asp-items="Model.EmployeeContacts"/>
+                                    asp-items="Model.ContactTypes"/>
     </div>
 
     <button type="submit" class="btn btn-primary">Save</button>

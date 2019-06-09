@@ -1,6 +1,6 @@
 ﻿namespace Audemus.Core
 {
-    public enum EmployeeContactType
+    public enum ContactType
     {
         None,
         NoResponseLeftVM,

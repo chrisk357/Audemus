@@ -15,21 +15,52 @@ namespace Audemus.Pages.Contacts
         private readonly IContactData contactData;
         private readonly IHtmlHelper htmlHelper;
 
+        [BindProperty]
         public Contact Contact { get; set; }
-        public IEnumerable <SelectListItem> EmployeeContacts { get; set; }
-        public EditModel(IContactData contactData)
+        public IEnumerable<SelectListItem> ContactTypes { get; set; }
+        public EditModel(IContactData contactData,
+                        IHtmlHelper htmlHelper)
         {
             this.contactData = contactData;
+            this.htmlHelper = htmlHelper;
         }
-        public IActionResult OnGet(int contactId)
+        public IActionResult OnGet(int? contactId)
         {
-            EmployeeContacts = htmlHelper.GetEnumSelectList<EmployeeContacts>();
-            Contact = contactData.GetById(contactId);
-            if(Contact == null)
+            ContactTypes = htmlHelper.GetEnumSelectList<ContactType>();
+            if (contactId.HasValue)
+            {
+                Contact = contactData.GetById(contactId.Value);
+            }
+            else
+            {
+                Contact = new Contact();
+            }
+            if (Contact == null)
             {
                 return RedirectToPage("./NotFound");
             }
             return Page();
         }
+
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                ContactTypes = htmlHelper.GetEnumSelectList<ContactType>();
+                return Page();
+            }
+            if (Contact.Id > 0)
+            {
+                contactData.Update(Contact);
+            }
+            else
+            {
+                contactData.Add(Contact);
+            }
+            contactData.Commit();
+            TempData["Message"] = "Contact Saved!";
+            return RedirectToPage("./Detail", new { ContactId = Contact.Id });
+        }
+
     }
 }
