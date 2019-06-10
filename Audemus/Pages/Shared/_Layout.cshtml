@@ -43,6 +43,7 @@
             </div>
         </nav>
     </header>
+   
     <div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
@@ -51,10 +52,11 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+    
+            @RenderSection("footer", required: false)
             &copy; 2019 - Audemus - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+        </footer>
+   
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

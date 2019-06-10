@@ -35,3 +35,5 @@ C:\Users\chris\source\repos\Audemus\Audemus\bin\Debug\netcoreapp2.2\Audemus.Core
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contacts\List.g.cshtml.cs
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contacts\Detail.g.cshtml.cs
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contacts\Edit.g.cshtml.cs
+C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contacts\NotFound.g.cshtml.cs
+C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contacts\Delete.g.cshtml.cs
