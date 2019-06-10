@@ -1,7 +1,7 @@
 ﻿@page
 @model ListModel
 @{
-
+    ViewData["Title"] = "Contacts";
 }
 
 <h1>Contacts</h1>
@@ -20,32 +20,10 @@
 </form>
 
 
-<table class="table">
-    @foreach (var contact in Model.Contacts)
-    {
-        <tr>
-            <td>@contact.Name</td>
-
-            <td>@contact.Phone</td>
-            <td>@contact.Email</td>
-            <td>
-                <a class="btn btn-lg" asp-page="./Detail" asp-route-contactId="@contact.Id">
-                    <i class="far fa-address-card"></i>
-                </a>
-            </td>           
-            <td>
-                <a class="btn btn-lg" asp-page="./Edit" asp-route-contactId="@contact.Id">
-                    <i class="fas fa-user-edit"></i>
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-lg" asp-page="./Delete" asp-route-contactId="@contact.Id">
-                    <i class="fas fa-trash-alt"></i>
-                </a>
-            </td>
-        </tr>
-    }
-</table>
+@foreach(var contact in Model.Contacts)
+{
+    <partial name="_Summary" model="contact" />
+}
 
 <a class="btn btn-primary" asp-page=".\Edit">Add</a>
 

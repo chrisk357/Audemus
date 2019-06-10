@@ -85,5 +85,10 @@ namespace Audemus.Data
             }
             return contact;
         }
+
+        public int GetCountOfContacts()
+        {
+            return contacts.Count();
+        }
     }
 }

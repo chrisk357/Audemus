@@ -11,6 +11,8 @@ namespace Audemus.Data
         Contact Update(Contact updatedContact);
         Contact Add(Contact newContact);
         Contact Delete(int id);
+        int GetCountOfContacts();
+      
         int Commit();
     }
 }

@@ -1,0 +1,84 @@
+﻿@page
+@model Audemus.Pages.R2.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].StreetNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].StreetName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].CityLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].StateLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].DateAttempted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact[0].EmployeeContact)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Contact) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StreetNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StreetName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CityLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StateLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateAttempted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeContact)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

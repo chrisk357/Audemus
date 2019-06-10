@@ -1,1 +1,28 @@
-﻿
+﻿@using Audemus.Core
+@model  Contact
+
+<div class="card card-default">
+    <div class="card-header">
+        <h3>@Model.Name</h3>
+    </div>
+    <div class="card-body">
+        <span>Phone: @Model.Phone</span>
+        <span>Response: @Model.EmployeeContact</span>
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-lg" asp-page="./Detail" asp-route-contactId="@Model.Id">
+            <i class="far fa-address-card"></i>
+        </a>
+       
+        
+            <a class="btn btn-lg" asp-page="./Edit" asp-route-contactId="@Model.Id">
+                <i class="fas fa-user-edit"></i>
+            </a>
+
+            <a class="btn btn-lg" asp-page="./Delete" asp-route-contactId="@Model.Id">
+                <i class="fas fa-trash-alt"></i>
+            </a>
+    </div>
+
+</div>
+

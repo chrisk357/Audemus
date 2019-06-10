@@ -50,6 +50,11 @@ namespace Audemus.Data
             return query;
         }
 
+        public int GetCountOfContacts()
+        {
+            return db.Contacts.Count();
+        }
+
         public Contact Update(Contact updatedContact)
         {
             var entity = db.Contacts.Attach(updatedContact);
