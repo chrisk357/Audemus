@@ -10,3 +10,5 @@ C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus
 C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.csproj.CopyComplete
 C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.dll
 C:\Users\chris\source\repos\Audemus\Audemus.Data\obj\Debug\netcoreapp2.2\Audemus.Data.pdb
+C:\Users\chris\source\repos\Audemus\Audemus.Data\bin\Debug\netcoreapp2.2\Audemus.Data.runtimeconfig.json
+C:\Users\chris\source\repos\Audemus\Audemus.Data\bin\Debug\netcoreapp2.2\Audemus.Data.runtimeconfig.dev.json
