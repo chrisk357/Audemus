@@ -9,6 +9,8 @@ namespace Audemus.Core
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string StreetNumber { get; set; }
+        public string StreetName { get; set; }
         public string CityLocation { get; set; }
         public string StateLocation { get; set; }
         public string Phone { get; set; }

@@ -24,13 +24,16 @@ namespace Audemus.Data
         {
             contacts = new List<Contact>()
             {
-                new Contact { Id = 1, Name = "Alfred Law Office", CityLocation = "Houston", StateLocation = "Texas",
+                new Contact { Id = 1, Name = "Alfred Law Office", StreetNumber = "1123", StreetName = "Mountain View Dr.", CityLocation = "Houston", StateLocation = "Texas",
                 Phone = "8322221535", Email = "Alfredlaw@gmail.com", EmployeeContact = ContactType.NoResponseLeftVM},
-                new Contact { Id = 2, Name = "Jersey Jurisdiction Firm", CityLocation = "Houston", StateLocation = "Texas",
+
+                new Contact { Id = 2, Name = "Jersey Jurisdiction Firm", StreetNumber = "8796", StreetName = "Scott St.", CityLocation = "Houston", StateLocation = "Texas",
                 Phone = "8324441433", Email = "JerseyJ@ymail.com", EmployeeContact = ContactType.ContactMadeFollowUp},
-                new Contact { Id = 3, Name = "Smith & Sanders Associates", CityLocation = "Cypress", StateLocation = "Texas",
+
+                new Contact { Id = 3, Name = "Smith & Sanders Associates", StreetNumber = "3582", StreetName = "Lobelia Dr.", CityLocation = "Cypress", StateLocation = "Texas",
                 Phone = "2813581298", Email = "SSassociates@gmail.com", EmployeeContact = ContactType.NoResponseLeftVM},
-                new Contact { Id = 4, Name = "Turner Law Office", CityLocation = "Pasadena", StateLocation = "Texas",
+
+                new Contact { Id = 4, Name = "Turner Law Office", StreetNumber = "3354", StreetName = "Carolina", CityLocation = "Pasadena", StateLocation = "Texas",
                 Phone = "8322221535", Email = "TurnerLaw@gmail.com", EmployeeContact = ContactType.ContactMadeNoFollowUp}
 
             };
@@ -54,6 +57,8 @@ namespace Audemus.Data
             if(contact != null)
             {
                 contact.Name = updatedContact.Name;
+                contact.StreetNumber = updatedContact.StreetNumber;
+                contact.StreetName = updatedContact.StreetName;
                 contact.CityLocation = updatedContact.CityLocation;
                 contact.StateLocation = updatedContact.StateLocation;
                 contact.Phone = updatedContact.Phone;
