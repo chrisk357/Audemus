@@ -9,17 +9,13 @@
     Id: @Model.Contact.Id
 </div>
 <div>
-    Street Number: @Model.Contact.StreetNumber
+    Address1: @Model.Contact.StreetNumber @Model.Contact.StreetName
 </div>
+
 <div>
-    Street Name: @Model.Contact.StreetName
+    Address2: @Model.Contact.CityLocation, @Model.Contact.StateLocation
 </div>
-<div>
-    City: @Model.Contact.CityLocation
-</div>
-<div>
-    State: @Model.Contact.StateLocation
-</div>
+
 <div>
     Email: @Model.Contact.Email
 </div>
@@ -27,7 +23,15 @@
     Phone: @Model.Contact.Phone
 </div>
 <div>
+    Call Date: @Model.Contact.DateAttempted
+</div>
+<div>
     Sit-Rep: @Model.Contact.EmployeeContact
 </div>
+
+@if(Model.Message != null)
+{
+    <div class="alert alert-info">@Model.Message</div>
+}
 
 <a asp-page="./List" class="btn btn-danger">Back</a>

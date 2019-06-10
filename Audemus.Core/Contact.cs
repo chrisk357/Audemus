@@ -15,6 +15,7 @@ namespace Audemus.Core
         public string StateLocation { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
+        public string DateAttempted { get; set; }
         public ContactType EmployeeContact { get; set; }
 
     }
