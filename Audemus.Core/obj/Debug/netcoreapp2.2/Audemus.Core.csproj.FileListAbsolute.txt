@@ -6,4 +6,3 @@ C:\Users\chris\source\repos\Audemus\Audemus.Core\obj\Debug\netcoreapp2.2\Audemus
 C:\Users\chris\source\repos\Audemus\Audemus.Core\obj\Debug\netcoreapp2.2\Audemus.Core.AssemblyInfo.cs
 C:\Users\chris\source\repos\Audemus\Audemus.Core\obj\Debug\netcoreapp2.2\Audemus.Core.dll
 C:\Users\chris\source\repos\Audemus\Audemus.Core\obj\Debug\netcoreapp2.2\Audemus.Core.pdb
-C:\Users\chris\source\repos\Audemus\Audemus.Core\obj\Debug\netcoreapp2.2\Audemus.Core.csprojAssemblyReference.cache

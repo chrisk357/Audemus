@@ -15,16 +15,16 @@ namespace Audemus.Data
             contacts = new List<Contact>()
             {
                 new Contact { Id = 1, Name = "Alfred Law Office", StreetNumber = "1123", StreetName = "Mountain View Dr.", CityLocation = "Houston", StateLocation = "Texas",
-                Phone = "8322221535", Email = "Alfredlaw@gmail.com", DateAttempted = "05/28/2019", EmployeeContact = ContactType.NoResponseLeftVM},
+                Phone = "8322221535", Email = "Alfredlaw@gmail.com", DateAttempted = "05/28/2019", EmployeeContact = ContactType.NoResponseLeftVoiceMail},
 
                 new Contact { Id = 2, Name = "Jersey Jurisdiction Firm", StreetNumber = "8796", StreetName = "Scott St.", CityLocation = "Houston", StateLocation = "Texas",
                 Phone = "8324441433", Email = "JerseyJ@ymail.com", DateAttempted = "05/22/2019", EmployeeContact = ContactType.ContactMadeFollowUp},
 
                 new Contact { Id = 3, Name = "Smith & Sanders Associates", StreetNumber = "3582", StreetName = "Lobelia Dr.", CityLocation = "Cypress", StateLocation = "Texas",
-                Phone = "2813581298", Email = "SSassociates@gmail.com", DateAttempted = "06/10/2019", EmployeeContact = ContactType.NoResponseLeftVM},
+                Phone = "2813581298", Email = "SSassociates@gmail.com", DateAttempted = "06/10/2019", EmployeeContact = ContactType.NoResponseLeftVoiceMail},
 
                 new Contact { Id = 4, Name = "Turner Law Office", StreetNumber = "3354", StreetName = "Carolina", CityLocation = "Pasadena", StateLocation = "Texas",
-                Phone = "8322221535", Email = "TurnerLaw@gmail.com", DateAttempted = "06/01/2019", EmployeeContact = ContactType.ContactMadeNoFollowUp}
+                Phone = "8322221535", Email = "TurnerLaw@gmail.com", DateAttempted = "06/01/2019", EmployeeContact = ContactType.ContactMadeDoNotFollowUp}
 
             };
         }

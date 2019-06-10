@@ -12,6 +12,7 @@ namespace Audemus.Pages.Contacts
     public class DetailModel : PageModel
     {
         private readonly IContactData contactData;
+
         [TempData]
         public string Message { get; set; }
         public Contact Contact { get; set; }

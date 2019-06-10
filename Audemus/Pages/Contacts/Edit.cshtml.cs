@@ -59,7 +59,7 @@ namespace Audemus.Pages.Contacts
             }
             contactData.Commit();
             TempData["Message"] = "Contact Saved!";
-            return RedirectToPage("./Detail", new { ContactId = Contact.Id });
+            return RedirectToPage("./Detail", new { contactId = Contact.Id });
         }
 
     }

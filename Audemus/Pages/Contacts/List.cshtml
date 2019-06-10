@@ -1,5 +1,5 @@
 ﻿@page
-@model Audemus.Pages.Contacts.ListModel
+@model ListModel
 @{
 
 }
@@ -11,7 +11,7 @@
         <div class="input-group">
             <input type="search" class="form-control" asp-for="SearchTerm" />
             <span class="input-group-btn">
-                <button class="btn btn-default btn-success">
+                <button class="btn btn-default">
                     <i class="fas fa-arrow-right" ></i>
                 </button>
             </span>
@@ -42,5 +42,5 @@
     }
 </table>
 
-<a asp-page=".\Edit" class="btn btn-primary">Add New</a>
-
+<a class="btn btn-primary" asp-page=".\Edit">Add</a>
+<div>@Model.Message</div>

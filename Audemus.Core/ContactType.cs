@@ -3,9 +3,9 @@
     public enum ContactType
     {
         None,
-        NoResponseLeftVM,
-        NoResponseNoVM,
-        ContactMadeNoFollowUp,
+        NoResponseLeftVoiceMail,
+        NoResponseNoVoiceMail,
+        ContactMadeDoNotFollowUp,
         ContactMadeFollowUp
     }
 }
