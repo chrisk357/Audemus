@@ -1,0 +1,23 @@
+﻿@page
+@model Audemus.Pages.Contacts.ClientContactsModel
+@{
+    ViewData["Title"] = "ClientContacts";
+}
+
+<h2>Client Contacts</h2>
+
+@section Scripts {
+<script>
+
+    $(function () {
+        $.ajax("/api/contacts/",
+            { method: "get" })
+            .then(function (response) {
+                console.dir(response);
+
+            });
+    });
+
+
+</script>
+}

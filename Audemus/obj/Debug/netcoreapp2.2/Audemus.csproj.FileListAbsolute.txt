@@ -44,3 +44,4 @@ C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\R2\Details.g.cshtml.cs
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\R2\Edit.g.cshtml.cs
 C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\R2\Index.g.cshtml.cs
+C:\Users\chris\source\repos\Audemus\Audemus\obj\Debug\netcoreapp2.2\Razor\Pages\Contacts\ClientContacts.g.cshtml.cs
