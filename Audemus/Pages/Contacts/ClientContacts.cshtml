@@ -6,6 +6,13 @@
 
 <h2>Client Contacts</h2>
 
+<table class="table" id="contacts">
+
+</table>
+
+
+
+
 @section Scripts {
 
 <environment include="Development">
@@ -25,7 +32,16 @@
         $.ajax("/api/contacts/",
             { method: "get" })
             .then(function (response) {
-                
+                $("#contacts").dataTable({
+                    data: response,
+                    columns: [
+                        { "data": "name" },
+                        { "data": "phone" },
+                        { "data": "email" },
+                        { "data": "employeecontact" }
+                        //{ "data": "contacttype" }
+                    ]
+                });
 
             });
     });
