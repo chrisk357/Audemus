@@ -29,6 +29,10 @@
 <script>
 
     $(function () {
+
+        var contacts = ["None", "NoResponseLeftVoiceMail", "NoResponseNoVoiceMail",
+            "ContactMadeDoNotFollowUp", "ContactMadeFollowUp"]
+
         $.ajax("/api/contacts/",
             { method: "get" })
             .then(function (response) {
@@ -38,8 +42,16 @@
                         { "data": "name" },
                         { "data": "phone" },
                         { "data": "email" },
-                        { "data": "employeecontact" }
-                        //{ "data": "contacttype" }
+                        {
+                            "data": "employeeContact", "render": function (data) {
+                                return contacts[data];
+                            }
+                        }
+                      //  { "data": "streetNumber" },
+                     //   { "data": "streetName" }
+                     //   { "data": "cityLocation" }
+                     //   { "data": "stateLocation" }
+                     //   { "data": "dateAttempted" }
                     ]
                 });
 
