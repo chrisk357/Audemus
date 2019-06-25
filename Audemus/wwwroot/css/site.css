@@ -7,6 +7,11 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+body {
+    background-image: url('/images/grey1.png');
+    background-repeat: repeat;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
