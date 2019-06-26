@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audemus", "Audemus\Audemus.csproj", "{E25B027F-CD84-4BA5-8C38-0139A21CBF78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audemus.Core", "Audemus.Core\Audemus.Core.csproj", "{D1ECAC75-C1ED-4F08-9A63-053AF8E98A9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audemus.Core", "Audemus.Core\Audemus.Core.csproj", "{D1ECAC75-C1ED-4F08-9A63-053AF8E98A9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audemus.Data", "Audemus.Data\Audemus.Data.csproj", "{4FEFE15B-4BDB-4948-81CB-6A1826A5F373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Audemus.Data", "Audemus.Data\Audemus.Data.csproj", "{4FEFE15B-4BDB-4948-81CB-6A1826A5F373}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
